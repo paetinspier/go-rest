@@ -46,6 +46,6 @@ func Run() {
 		Addr: ":8080",
 		Handler: stack(router),
 	}
-	color.HiBlue("Server running on port 8080")
+	color.HiBlue("Server listening on port 8080")
 	log.Fatal(server.ListenAndServe())
 }
